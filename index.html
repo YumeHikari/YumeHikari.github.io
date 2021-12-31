@@ -1,8 +1,53 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>夢光的个人页面</h1>
-<p>我还没有想好在这里放什么</p>
-<p>阿巴阿巴</p>
+</body>
+</html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="author" content="YumeHikari">
+    <title>夢光Hikari's page</title>
+    <link rel="stylesheet" type="text/css" href="/Users/YumeHikari/Documents/GitHub/YumeHikari.github.io/style.css">
+    <script>
+        function displayDate()
+            {
+                document.getElementById("displayDate").innerHTML=Date();
+                window.setInterval("displayDate()",1000);
+            }
+        function myFunction()//未使用
+            {
+                x=document.getElementById("darkmode")
+                x.style.color="#ff0000";
+            }
+    </script>
+</head>
+
+<body onload="displayDate()">
+    <header>
+        <div class="header_area">
+        <ul>
+            <li>时间：<p id="displayDate">Loadiing...  </p> </li>
+            <li>
+                <img src="/Users/YumeHikari/Documents/GitHub/YumeHikari.github.io/images/weather.png" alt="">天气
+                <div class="weather">
+                <iframe width="455" scrolling="no" height="75" frameborder="0" allowtransparency="true"
+                src="http://i.tianqi.com/index.php?c=code&amp;id=38&amp;icon=1&amp;num=2&amp;align=left"></iframe>
+                </div>
+            </li>
+    </header>
+    <h1>
+        这里是夢光Hikari的个人页面
+    </h1>
+    <p>欢迎来到我的小窝 </p>
+    <h2>找到我的方式</h2>
+    <p>
+        我的知乎主页
+        <a href="https://www.zhihu.com/people/YumeHikari">
+            <img  src="/Users/YumeHikari/Documents/GitHub/YumeHikari.github.io/images/zhihuIcon.jpeg" alt="zhihuIcon.jpeg" width="20" height="20" />
+        </a>
+    </p>
+    <p>我的微信 <img src="/Users/YumeHikari/Documents/GitHub/YumeHikari.github.io/images/WechatQRcode.jpeg" alt="WechatQRcode.jpeg" width="200" height="200" /> </p>
+    
+    
 </body>
 </html>
